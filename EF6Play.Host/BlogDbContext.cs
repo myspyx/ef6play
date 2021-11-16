@@ -17,8 +17,8 @@ namespace EF6Play.Host
                 .HasMany(b => b.Posts)
                 .WithRequired(p => p.Blog);
             
-            /*modelBuilder.HasDefaultSchema("public");
-            base.OnModelCreating(modelBuilder);*/
+            modelBuilder.HasDefaultSchema("public");
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
