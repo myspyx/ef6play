@@ -6,7 +6,7 @@ namespace EF6Play.Host
     {
         public BlogDbContext(): base("BlogDbContext")
         {
-            
+            Database.SetInitializer(new BlogDbInitializer());
         }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }
@@ -17,8 +17,8 @@ namespace EF6Play.Host
                 .HasMany(b => b.Posts)
                 .WithRequired(p => p.Blog);
             
-            /*modelBuilder.HasDefaultSchema("public");
-            base.OnModelCreating(modelBuilder);*/
+            modelBuilder.HasDefaultSchema("public");
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

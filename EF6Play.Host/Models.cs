@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace EF6Play.Host
 {
@@ -6,6 +7,7 @@ namespace EF6Play.Host
     {
         public int BlogId { get; set; }
         public string Name { get; set; }
+        public string Author { get; set; }
 
         public virtual List<Post> Posts { get; set; }
     }
@@ -15,6 +17,7 @@ namespace EF6Play.Host
         public int PostId { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
+        public string Description { get; set; }
 
         public int BlogId { get; set; }
         public virtual Blog Blog { get; set; }
