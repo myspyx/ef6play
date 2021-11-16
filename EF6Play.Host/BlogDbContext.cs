@@ -6,7 +6,7 @@ namespace EF6Play.Host
     {
         public BlogDbContext(): base("BlogDbContext")
         {
-            
+            Database.SetInitializer(new BlogDbInitializer());
         }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }

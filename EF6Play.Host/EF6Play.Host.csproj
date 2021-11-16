@@ -45,6 +45,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="BlogDbContext.cs" />
+        <Compile Include="BlogDbInitializer.cs" />
         <Compile Include="Migrations\202111160001261_Init.cs" />
         <Compile Include="Migrations\202111160001261_Init.Designer.cs">
           <DependentUpon>202111160001261_Init.cs</DependentUpon>
@@ -52,6 +53,22 @@
         <Compile Include="Migrations\202111160006557_ChangeScheme.cs" />
         <Compile Include="Migrations\202111160006557_ChangeScheme.Designer.cs">
           <DependentUpon>202111160006557_ChangeScheme.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Migrations\202111161350461_addAuthor.cs" />
+        <Compile Include="Migrations\202111161350461_addAuthor.Designer.cs">
+          <DependentUpon>202111161350461_addAuthor.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Migrations\202111161427128_addPublishTime.cs" />
+        <Compile Include="Migrations\202111161427128_addPublishTime.Designer.cs">
+          <DependentUpon>202111161427128_addPublishTime.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Migrations\202111161455150_updatepublishtimenullable.cs" />
+        <Compile Include="Migrations\202111161455150_updatepublishtimenullable.Designer.cs">
+          <DependentUpon>202111161455150_updatepublishtimenullable.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Migrations\202111161456286_removePublished.cs" />
+        <Compile Include="Migrations\202111161456286_removePublished.Designer.cs">
+          <DependentUpon>202111161456286_removePublished.cs</DependentUpon>
         </Compile>
         <Compile Include="Migrations\Configuration.cs" />
         <Compile Include="Models.cs" />
@@ -84,6 +101,18 @@
       </EmbeddedResource>
       <EmbeddedResource Include="Migrations\202111160006557_ChangeScheme.resx">
         <DependentUpon>202111160006557_ChangeScheme.cs</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Migrations\202111161350461_addAuthor.resx">
+        <DependentUpon>202111161350461_addAuthor.cs</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Migrations\202111161427128_addPublishTime.resx">
+        <DependentUpon>202111161427128_addPublishTime.cs</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Migrations\202111161455150_updatepublishtimenullable.resx">
+        <DependentUpon>202111161455150_updatepublishtimenullable.cs</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Migrations\202111161456286_removePublished.resx">
+        <DependentUpon>202111161456286_removePublished.cs</DependentUpon>
       </EmbeddedResource>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
