@@ -70,6 +70,14 @@
         <Compile Include="Migrations\202111161456286_removePublished.Designer.cs">
           <DependentUpon>202111161456286_removePublished.cs</DependentUpon>
         </Compile>
+        <Compile Include="Migrations\202111161608095_addDesc.cs" />
+        <Compile Include="Migrations\202111161608095_addDesc.Designer.cs">
+          <DependentUpon>202111161608095_addDesc.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Migrations\202111161611218_renameDesc.cs" />
+        <Compile Include="Migrations\202111161611218_renameDesc.Designer.cs">
+          <DependentUpon>202111161611218_renameDesc.cs</DependentUpon>
+        </Compile>
         <Compile Include="Migrations\Configuration.cs" />
         <Compile Include="Models.cs" />
         <Compile Include="Program.cs" />
@@ -113,6 +121,12 @@
       </EmbeddedResource>
       <EmbeddedResource Include="Migrations\202111161456286_removePublished.resx">
         <DependentUpon>202111161456286_removePublished.cs</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Migrations\202111161608095_addDesc.resx">
+        <DependentUpon>202111161608095_addDesc.cs</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Migrations\202111161611218_renameDesc.resx">
+        <DependentUpon>202111161611218_renameDesc.cs</DependentUpon>
       </EmbeddedResource>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

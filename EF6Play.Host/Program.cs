@@ -11,9 +11,13 @@ namespace EF6Play.Host
         {
             using (var db = new BlogDbContext())
             {
-                // Auto migration
-                var migrator = new DbMigrator(new EF6Play.Host.Migrations.Configuration(), db);
-                migrator.Update(null);
+                // hack, otherwise BlogDbInitializer.Seed() will not call
+                if (db.Database.Exists())
+                {
+                    // Auto migration
+                    var migrator = new DbMigrator(new EF6Play.Host.Migrations.Configuration(), db);
+                    migrator.Update(null);
+                }
 
                 // Display all Blogs from the database
                 var query = from b in db.Blogs

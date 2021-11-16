@@ -10,7 +10,8 @@ namespace EF6Play.Host
             context.Blogs.Add(new Blog
             {
                 Name = "Hello",
-                BlogId = 1
+                BlogId = 1,
+                Author = "LLIB"
             });
         }
     }
